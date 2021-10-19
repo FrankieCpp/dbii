@@ -1,0 +1,16 @@
+input{
+	margin-bottom: 10px;
+}
+
+body {
+	background-color: #a5b5da;
+}
+
+.hide{
+	diplay:none;
+}
+
+h1{
+	font-weight: 600 !important;
+	color: Black;
+}

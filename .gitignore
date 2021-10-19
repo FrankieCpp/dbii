@@ -1,0 +1,6 @@
+target/*
+.metadata/*
+.recommenders/*
+.recommenders
+/.metadata/
+**/target/*

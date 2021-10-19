@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>MorePageServlet</display-name>
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- LOGIN -->
+	<servlet-mapping>
+		<servlet-name>checknopwd</servlet-name>
+		<url-pattern>/checknopwd.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>checknopwd</servlet-name>
+		<servlet-class>servlet.ControllerCheckNoLogin</servlet-class>
+		<init-param>
+			<param-name>log4j-properties-location</param-name>
+			<param-value>WEB-INF/log4j.properties</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ToLogin</servlet-name>
+		<url-pattern>/login.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ToLogin</servlet-name>
+		<servlet-class>servlet.ControllerLogin</servlet-class>
+		<init-param>
+			<param-name>log4j-properties-location</param-name>
+			<param-value>WEB-INF/log4j.properties</param-value>
+		</init-param>
+	</servlet>
+	<!-- ROUTING -->
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentochicomanda.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentotesteseguito.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentopersonalemarittimo.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentotest.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/archivioimbarcazioni.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/archiviosoci.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentotecnico.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentosocio.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentoimbarcazione.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/inserimentomodello.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/gotohomepage.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/gotocheckout.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/gotocheckouttemplate.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>routing</servlet-name>
+		<url-pattern>/gotoarchive.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>routing</servlet-name>
+		<servlet-class>servlet.ControllerRouting</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO SOCIO -->	
+	<servlet-mapping>
+		<servlet-name>insermimentosocio_mapping</servlet-name>
+		<url-pattern>/inseriscisocio.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>insermimentosocio_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoSocio</servlet-class>
+	</servlet>
+	<!-- GET SOCI -->	
+	<servlet-mapping>
+		<servlet-name>getsoci_mapping</servlet-name>
+		<url-pattern>/getsoci.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>getsoci_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetSoci</servlet-class>
+	</servlet>
+	<!-- GET MODELLI -->	
+	<servlet-mapping>
+		<servlet-name>getmodelli_mapping</servlet-name>
+		<url-pattern>/getmodelli.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>getmodelli_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetModelli</servlet-class>
+	</servlet>
+	<!-- GET MODELLI -->	
+	<servlet-mapping>
+		<servlet-name>getcapitani_mapping</servlet-name>
+		<url-pattern>/getcapitani.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>getcapitani_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetCapitani</servlet-class>
+	</servlet>
+	<!-- GET TEST -->	
+	<servlet-mapping>
+		<servlet-name>gettest_mapping</servlet-name>
+		<url-pattern>/gettest.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>gettest_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetTest</servlet-class>
+	</servlet>
+	<!-- GET TECNICI -->	
+	<servlet-mapping>
+		<servlet-name>gettecnici_mapping</servlet-name>
+		<url-pattern>/gettecnici.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>gettecnici_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetTecnici</servlet-class>
+	</servlet>
+	<!-- GET IMBARCAZIONI-->	
+	<servlet-mapping>
+		<servlet-name>getimbarcazioni_mapping</servlet-name>
+		<url-pattern>/getimbarcazioni.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>getimbarcazioni_mapping</servlet-name>
+		<servlet-class>servlet.ControllerGetImbarcazioni</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO MODELLO -->	
+	<servlet-mapping>
+		<servlet-name>insermimentomodello_mapping</servlet-name>
+		<url-pattern>/inseriscimodello.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>insermimentomodello_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoModello</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO IMBARCAZIONE -->	
+	<servlet-mapping>
+		<servlet-name>insermimentoimbarcazione_mapping</servlet-name>
+		<url-pattern>/insimbarcazionerisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>insermimentoimbarcazione_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoImbarcazione</servlet-class>
+	</servlet>
+	<!-- ARCHIVIO IMBARCAZIONE -->	
+	<servlet-mapping>
+		<servlet-name>deletesocirisultato_mapping</servlet-name>
+		<url-pattern>/deletesoci.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deletesocirisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerCancellaSoci</servlet-class>
+	</servlet>
+	<!-- ARCHIVIO IMBARCAZIONE -->	
+	<servlet-mapping>
+		<servlet-name>dettaglioimbarazioni_mapping</servlet-name>
+		<url-pattern>/dettaglioimbarazioni.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>dettaglioimbarazioni_mapping</servlet-name>
+		<servlet-class>servlet.ControllerDettaglioImbarcazione</servlet-class>
+	</servlet>
+	<!-- ARCHIVIO IMBARCAZIONE -->	
+	<servlet-mapping>
+		<servlet-name>archivioimbarcazionirisultato_mapping</servlet-name>
+		<url-pattern>/archivioimbarcazionirisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>archivioimbarcazionirisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerArchivioImbarcazioni</servlet-class>
+	</servlet>
+		<!-- ARCHIVIO IMBARCAZIONE -->	
+	<servlet-mapping>
+		<servlet-name>archiviosocirisultato_mapping</servlet-name>
+		<url-pattern>/archiviosocirisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>archiviosocirisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerArchivioSoci</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO TECNICO -->	
+	<servlet-mapping>
+		<servlet-name>inserimentotecnicorisultato_mapping</servlet-name>
+		<url-pattern>/inserimentotecnicorisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>inserimentotecnicorisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoTecnico</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO TEST -->	
+	<servlet-mapping>
+		<servlet-name>inserimentotestrisultato_mapping</servlet-name>
+		<url-pattern>/inserimentotestrisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>inserimentotestrisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoTest</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO TEST ESEGUIT-->	
+	<servlet-mapping>
+		<servlet-name>instesteseguitorisultato_mapping</servlet-name>
+		<url-pattern>/instesteseguitorisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>instesteseguitorisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoTestEseguito</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO PERSONALE MARITTIMO-->	
+	<servlet-mapping>
+		<servlet-name>inspersonalemarrisultato_mapping</servlet-name>
+		<url-pattern>/inspersonalemarrisultato.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>inspersonalemarrisultato_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoPersonaleMarittimo</servlet-class>
+	</servlet>
+	<!-- INSERIMENTO PERSONALE MARITTIMO-->	
+	<servlet-mapping>
+		<servlet-name>inseriscicomandante_mapping</servlet-name>
+		<url-pattern>/inseriscicomandante.html</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>inseriscicomandante_mapping</servlet-name>
+		<servlet-class>servlet.ControllerInserimentoChiComanda</servlet-class>
+	</servlet>
+</web-app>

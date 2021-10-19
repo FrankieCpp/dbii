@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>MATR: 640690</title>
+
+		<link rel="stylesheet" type="text/css" href="main/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="main/css/index.css">
+		
+		<script type="text/javascript" src="main/js/jquery.js"></script>
+		<script type="text/javascript" src="main/js/popper.min.js"></script>
+		<script type="text/javascript" src="main/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src='main/js/index.js'></script>
+	</head>
+
+	<body class="text-center">
+	    <nav class="navbar navbar-default navbar-fixed-top"></nav>
+	    <div id='div_login' class="hide grid">
+			<div class="col-md-4 offset-md-4">
+				<img class="mb-4" src="main/unibalogo.png" alt="UNIBA Logo" height="140" width="218" />
+			</div>
+			<div class="col-md-4 offset-md-4">
+				<div id="errorDiv" class="hide">
+					<div id="errorDivMsg" class="alert alert-danger"></div>
+				</div>
+				<form class="form-signin" id="form-sign-in" method="post" action="/frontend/login.html">
+					<h1 class="h3 mb-3">Francesco Coppi</h1>
+					<h1 class="h3 mb-3">Matr: 640690</h1>
+					<label for="username" class="sr-only">Username</label>
+					<input id="username" name="username" class="form-control" placeholder="Nickname" required="" autofocus="" type="text">
+					<label for="pwd" class="sr-only">Password</label>
+					<input id="pwd" name="pwd" class="form-control" placeholder="Password" required="" type="password">
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				</form>
+				<a id="clickme" class="hide" href="/frontend/gotohomepage.html"></a>
+			</div>
+		</div>
+		<div class="hide" id="result">
+			<form class="form-no-pwd" id="form-no-pwd" method="post" action="/frontend/checknopwd.html"></form>
+		</div>
+	</body>
+</html>

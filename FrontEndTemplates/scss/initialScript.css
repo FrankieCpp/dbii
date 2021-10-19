@@ -1,0 +1,38 @@
+body {
+  background-color: lightgrey;
+}
+
+body .full-screen {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid black;
+}
+
+body .menu-height {
+  min-height: 500px;
+}
+
+body .a-menu {
+  /* unvisited link */
+}
+
+body .a-menu a:link, body .a-menu a:link, body .a-menu a:hover, body .a-menu a:link {
+  color: white;
+}
+
+body .a-menu a:hover {
+  background-color: grey;
+}
+
+body .button-right {
+  position: absolute;
+  right: 0;
+}
+
+body .hide {
+  display: none;
+}
+/*# sourceMappingURL=initialScript.css.map */

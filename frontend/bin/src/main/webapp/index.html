@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>MATR: 640690</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/index.js'></script>
+	</head>
+
+	<body class="text-center">
+	    <nav class="navbar navbar-default navbar-fixed-top"></nav>
+	    <div class="grid">
+			<div class="col-md-4 offset-md-4">
+				<img class="mb-4" src="unibalogo.png" alt="UNIBA Logo" height="140" width="218" />
+			</div>
+			<div class="col-md-4 offset-md-4">
+				<form class="form-signin" id="form-sign-in" method="post" action="http://localhost:8080/frontend/login.html">
+					<h1 class="h3 mb-3">Francesco Coppi</h1>
+					<h1 class="h3 mb-3">Matr: 640690</h1>
+					<label for="username" class="sr-only">Email address</label>
+					<input id="username" name="username" class="form-control" placeholder="Nickname" required="" autofocus="" type="text">
+					<label for="pwd" class="sr-only">Password</label>
+					<input id="pwd" name="pwd" class="form-control" placeholder="Password" required="" type="password">
+<!-- 					<div class="checkbox mb-3"> -->
+<!-- 						<label> -->
+<!-- 							<input value="remember-me" type="checkbox"> Remember me -->
+<!-- 						</label> -->
+<!-- 					</div> -->
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+<!-- 						<a href="#" type="button" class="btn btn-lg btn-primary btn-block" id="signIn">Sign in</a> -->
+<!-- 					<p class="mt-5 mb-3 text-muted">© 2017-2018</p> -->
+				</form>
+			</div>
+		</div>
+		<div class="hide" id="result"></div>
+	</body>
+</html>

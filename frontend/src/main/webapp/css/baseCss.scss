@@ -1,0 +1,36 @@
+//https://medium.com/@ricardozea/sass-for-beginners-the-friendliest-guide-about-how-to-install-use-sass-on-windows-22ff4a32c1f7
+$var:lightgrey;
+body {
+  .bordered{
+    border: 1px border black;
+  }
+  background-color: $var;
+  .full-screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .menu-height {
+    min-height: 500px;
+  }
+  .a-menu {
+    /* unvisited link */
+    a {
+      &:link,
+      &:link,
+      &:hover,
+      &:link {
+        color: blue;
+      }
+    }
+  }
+}
+.button-right {
+    position: absolute;
+    right: 0;
+}
+.hide{
+    display: none;
+}

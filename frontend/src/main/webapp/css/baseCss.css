@@ -1,0 +1,37 @@
+body {
+  background-color: lightgrey;
+}
+
+body .bordered {
+  border: 1px border black;
+}
+
+body .full-screen {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body .menu-height {
+  min-height: 500px;
+}
+
+body .a-menu {
+  /* unvisited link */
+}
+
+body .a-menu a:link, body .a-menu a:link, body .a-menu a:hover, body .a-menu a:link {
+  color: blue;
+}
+
+.button-right {
+  position: absolute;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=baseCss.css.map */
